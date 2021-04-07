@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang='en'>
 <head>
@@ -25,7 +24,8 @@
       # remember we need to first fit the two-group model using this command
       Twogroup.model <- lm(formula = PercentageConsent ~ Condition, data = BelievedAgreement)
       # write and run the code to output the F statistics
-                        
+    </code> 
+        
     <!--Solution environment-->
     <code data-type="solution">
       # remember we need to first fit the two-group model using this command
@@ -33,9 +33,13 @@
       # write and run the code to output the F statistics
       supernova(Twogroup.model)
 
-    </code>                     
-    
+    </code> 
+        
+    <!--Submission correctness tests and feedback-->
+    <code data-type="sct">
+      ex() %>% check_result() %>% check_equal() 
 
+    </code>
 
   </div>
 </body>
