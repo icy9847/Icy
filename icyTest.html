@@ -18,20 +18,20 @@
     </code>
     <!--Student view-->
     <code data-type="sample-code">
-      # Calculate 627 / 3
+      # remember we need to first fit the two-group model using this command
+      Twogroup.model <- lm(formula = PercentageConsent ~ Condition, data = BelievedAgreement)
+      # write and run the code to output the F statistics
 
     </code>
     <!--Solution environment-->
     <code data-type="solution">
-      # Calculate 627 / 3
-      627 / 3
+      # remember we need to first fit the two-group model using this command
+      Twogroup.model <- lm(formula = PercentageConsent ~ Condition, data = BelievedAgreement)
+      # write and run the code to output the F statistics
+      supernova(Twogroup.model)
 
     </code>
-    <!--Submission correctness tests and feedback-->
-    <code data-type="sct">
-      ex() %>% check_operator("/") %>% check_result() %>% check_equal() 
 
-    </code>
   </div>
 </body>
 </html>
