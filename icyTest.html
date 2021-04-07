@@ -12,21 +12,20 @@
   <div data-datacamp-exercise data-lang="r" data-show-run-button=false data-show-solution-before=false data-no-lazy-load=true>
     <!--Prerun R environment-->
     <code data-type="pre-exercise-code">
-      packages <- c("mosaic", "Lock5withR", "Lock5Data", "supernova", "ggformula")
+      packages <- c("mosaic", "supernova")
       lapply(packages, library, character.only = T)
+      
       Condition <- c('agree','agree','agree','disagree','disagree')
       PercentageConsent <- c(65,61,63,50,52)
       BelievedAgreement <- data.frame(Condition, PercentageConsent)
-
-
     </code>
+      
     <!--Student view-->
     <code data-type="sample-code">
       # remember we need to first fit the two-group model using this command
       Twogroup.model <- lm(formula = PercentageConsent ~ Condition, data = BelievedAgreement)
       # write and run the code to output the F statistics
-
-    </code>
+                        
     <!--Solution environment-->
     <code data-type="solution">
       # remember we need to first fit the two-group model using this command
@@ -34,8 +33,11 @@
       # write and run the code to output the F statistics
       supernova(Twogroup.model)
 
-    </code>
+    </code>                     
+    
+
 
   </div>
 </body>
 </html>
+
