@@ -37,7 +37,8 @@
         
     <!--Submission correctness tests and feedback-->
     <code data-type="sct">
-      test_error()
+      ex() %>% check_object("Twogroup.model") %>% check_equal()
+      success_msg("Well done!")
 
     </code>
 
